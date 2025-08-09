@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>transform</title>
+    <style>
+        body{
+            margin: 100px;
+        }
+        .container, .inner{
+            width: 200px;
+            height: 200px;
+        }
+        .container{
+            border: 2px solid chartreuse;
+            background-color: aqua;
+        }
+        .inner{
+            border: 2px solid coral;
+            background-color: blueviolet;
+            /* transform: scale(0.5,0.5); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(.5) rotate(45deg); */
+            /* transform: translateX(100px) */
+        }
+
+        .inner:hover{
+            transform: translateY(100px) scale(0.5) rotate(45deg);
+        }
+    </style>
 </head>
 <body>
+    <h3>Expore Transform and translate</h3>
+    <div class="container">
+        <div class="inner">inner -1</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner -2</div>
+    </div>
+    <div class="container">
+        <div class="inner">inner -3</div>
+    </div>
+
     
 </body>
 </html>
