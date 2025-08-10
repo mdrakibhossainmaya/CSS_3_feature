@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enimation</title>
+    <style>
+        /* @keyframes */
+        @keyframes ping-pong {
+            from{
+                left: 0;
+            }
+            to{
+                left: 600px;
+                background-color: red;
+            }
+
+           
+        }
+
+
+        @keyframes bouns{
+            0% {
+                top: 0px;
+                left: 0px;
+                
+
+            }
+
+            25% {
+                left: 150px;
+                 top: 200px; /* top theke 200px neche nambe */
+                 background-color: brown;
+
+
+            }
+            50%{
+                left: 300px;
+                top: 0px;
+                background-color: blueviolet;
+
+            }
+            100%{
+                left: 500px;
+                top: 200px;
+                background-color: cornflowerblue;
+
+            }
+
+        }
+        .statge{
+            width: 800px;
+            height: 300px;
+            border: 2px solid chartreuse;
+            background-color: aqua;
+        }
+        .boll{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: fuchsia;
+            position: relative;
+            
+            /* animation: ping-pong 2s ease-in-out 1s infinite alternate; */
+            animation: bouns 3s ease-in-out 1s infinite alternate;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>Explore Enimation</h2>
+    <div class="statge">
+        <div class="boll"></div>
+    </div>
+
+    
+</body>
+</html>
